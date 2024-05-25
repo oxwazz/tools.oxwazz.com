@@ -28,7 +28,7 @@
   <div v-if="namespace === 'custom'">
     <label for="custom-namespace" class="font-bold">Custom Namespace</label>
     <input id="custom-namespace" v-model="customNamespace" class="border border-solid border-gray-500">
-    <p>MD5: {{ md5 }}</p>
+    <p>MD5: {{ 'md5' }}</p>
   </div>
   <div class="flex flex-col">
     <label for="name" class="font-bold">Name</label>

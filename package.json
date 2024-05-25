@@ -7,24 +7,55 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@types/crypto-js": "^4.2.2",
-    "@types/uuid": "^9.0.8",
-    "@vueuse/core": "^10.9.0",
-    "@vueuse/nuxt": "^10.9.0",
-    "autoprefixer": "^10.4.17",
-    "eslint": "^8.56.0",
-    "nuxt": "^3.10.0",
-    "postcss": "^8.4.33",
-    "tailwindcss": "^3.4.1",
-    "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
+    "postinstall": "nuxt prepare",
+    "test": "vitest --watch=false",
+    "test:watch": "vitest --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "crypto-js": "^4.2.0",
-    "uuid": "^9.0.1"
+    "@nuxt/eslint": "^0.3.12",
+    "@nuxt/image": "^1.7.0",
+    "@nuxt/ui": "^2.15.2",
+    "@nuxtjs/i18n": "^8.3.1",
+    "@nuxtjs/tailwindcss": "6.11.4",
+    "@pinia/nuxt": "^0.5.1",
+    "@tanstack/vue-query": "^5.35.1",
+    "@tanstack/vue-query-devtools": "^5.35.1",
+    "@tanstack/vue-table": "^8.16.0",
+    "@vee-validate/nuxt": "^4.12.7",
+    "@vee-validate/zod": "^4.12.7",
+    "@vueuse/motion": "^2.1.0",
+    "date-fns": "^3.6.0",
+    "nuxt": "^3.11.2",
+    "nuxt-posthog": "^1.5.0",
+    "nuxt-swiper": "^1.2.2",
+    "pinia": "^2.1.7",
+    "uuid": "^9.0.1",
+    "vee-validate": "^4.12.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "zod": "^3.23.6"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "node": ">=20.12.2"
+  },
+  "packageManager": "yarn@4.2.1",
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "@types/uuid": "^9",
+    "@vueuse/core": "^10.9.0",
+    "@vueuse/nuxt": "^10.9.0",
+    "eslint": "^9.2.0",
+    "nuxt-icon": "^0.6.10",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "sass": "^1.77.2",
+    "typescript": "^5.4.5",
+    "vite-plugin-eslint2": "^4.4.0",
+    "vitest": "^1.6.0",
+    "vue-tsc": "^1"
   }
 }

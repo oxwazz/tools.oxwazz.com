@@ -1,28 +1,28 @@
 <template>
-  <h1 class="font-bold text-2xl">
-    UUID v1 - Based On Timestamp
-  </h1>
-  <div class="text-base select-all mt-4">
+  <h1 class="text-2xl font-bold">UUID v1 - Based On Timestamp</h1>
+  <div class="mt-4 select-all text-base">
     {{ id }}
   </div>
-  <button class="mt-2 text-base bg-slate-600 hover:bg-slate-700 active:bg-slate-800 px-2 py-1 rounded-xl text-white" @click="generate">
+  <button
+    class="mt-2 rounded-xl bg-slate-600 px-2 py-1 text-base text-white hover:bg-slate-700 active:bg-slate-800"
+    @click="generate"
+  >
     generate
   </button>
 
-  <hr class="my-6">
-  <h1 class="font-bold text-2xl">
-    UUID v1 - Parse Time
-  </h1>
+  <hr class="my-6" />
+  <h1 class="text-2xl font-bold">UUID v1 - Parse Time</h1>
   <label for="UUID V1">
     UUID V1:
-    <input v-model="uuid" type="text" class="border rounded w-1/2">
+    <input v-model="uuid" type="text" class="w-1/2 rounded border" />
   </label>
   <p>Time: {{ time }}</p>
 </template>
 
 <script setup lang="ts">
 import { v1 as uuidv1, validate as uuidValidate } from 'uuid'
-import { UUIDv1ToDate } from '~/utilities/uuidv1-to-date'
+import { UUIDv1ToDate } from '~/utils/uuidv1-to-date'
+
 useHead({
   title: 'UUID v1 | Oxwazz Tools',
   meta: [

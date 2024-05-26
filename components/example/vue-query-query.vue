@@ -10,6 +10,8 @@
 
 <script setup lang="ts">
 import { useQuery } from '@tanstack/vue-query'
+import axios from 'axios'
+
 type Todo = {
   id: number
   title: string
@@ -17,7 +19,10 @@ type Todo = {
 
 const { isPending, isError, data, error, suspense } = useQuery<Todo>({
   queryKey: ['todos'],
-  queryFn: () => $fetch('https://jsonplaceholder.typicode.com/todos?_start=0&_limit=5')
+  queryFn: async () => {
+    const tes = await axios.get('https://jsonplaceholder.typicode.com/todos')
+    return tes.data
+  }
 })
 
 // for ssr

@@ -1,5 +1,23 @@
-html,
-body,
-#__nuxt {
-  height: 100%;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #__nuxt {
+    height: 100%;
+  }
+
+  html {
+    @apply scroll-smooth;
+
+    /** scrollbar styles */
+    scrollbar-color: rgb(238, 238, 238) #ffffff;
+
+    &.dark {
+      /** scrollbar styles */
+      scrollbar-color: #1f1f1f #2f2f2f;
+    }
+  }
 }
+
+

@@ -30,7 +30,7 @@ export default defineNuxtConfig({
 
   // @nuxt/eslint config
   eslint: {
-    checker: true
+    // checker: true
   },
 
   // @nuxt/ui config
@@ -42,12 +42,12 @@ export default defineNuxtConfig({
   tailwindcss: {
     configPath: './tailwind.config.ts'
   },
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {}
-    }
-  },
+  // postcss: {
+  //   plugins: {
+  //     tailwindcss: {},
+  //     autoprefixer: {}
+  //   }
+  // },
 
   // @nuxtjs/google-fonts config
   googleFonts: {
@@ -59,7 +59,8 @@ export default defineNuxtConfig({
         wght: '200..900',
         ital: '200..700'
       },
-      'Poetsen One': true
+      'Poetsen One': true,
+      'JetBrains Mono': true
     }
   },
   // @nuxtjs/i18n config
